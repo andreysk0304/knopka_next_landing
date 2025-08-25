@@ -1,0 +1,84 @@
+.section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.125rem;
+  margin-bottom: 24px;
+  color: #374151;
+}
+
+.icon {
+  font-size: 20px;
+  color: #4b5563;
+}
+
+.buttonWrapper {
+  margin-top: 32px;
+}
+
+.button {
+  width: 100%;
+  max-width: 400px;
+  height: 56px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: #3b82f6 !important;
+  color: #fff !important;
+  border-radius: 9999px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2563eb !important;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  margin-top: 64px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+}
+
+.cardContent {
+  text-align: center;
+  color: #4b5563;
+}
+
+.cardContent p {
+  font-size: 0.875rem;
+  margin: 4px 0;
+}

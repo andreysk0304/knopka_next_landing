@@ -1,0 +1,57 @@
+import { Card, Image } from 'antd'
+import styles from './styles/Steps.module.css'
+
+const STEPS = [
+	{
+		number: '1',
+		title: 'Активируйте Бота',
+		description: 'Нажмите на кнопку "Попробовать"',
+		image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2',
+	},
+	{
+		number: '2',
+		title: 'Добавьте Кабинет',
+		description:
+			'Введите название своего кабинета и действуйте по инструкции дальше в чат боте',
+		image: 'https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2',
+	},
+	{
+		number: '3',
+		title: 'Получайте удовольствие от автоматизации',
+		description: 'Наслаждайтесь результатами автоматизации вашего бизнеса',
+		image: 'https://images.pexels.com/photos/1181216/pexels-photo-1181216.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2',
+	},
+]
+
+export const Steps: React.FC = () => {
+	return (
+		<section className={styles.section}>
+			<div className={styles.container}>
+				<div className={styles.titleWrapper}>
+					<h2 className={styles.title}>Проще, чем кажется</h2>
+				</div>
+
+				<div className={styles.grid}>
+					{STEPS.map((step, index) => (
+						<Card key={index} className={styles.card} hoverable>
+							<div className={styles.imageWrapper}>
+								<Image
+									src={step.image}
+									alt={step.title}
+									height="100%"
+									width="100%"
+									style={{ objectFit: 'cover' }}
+									preview={false}
+								/>
+							</div>
+							<h3 className={styles.cardTitle}>
+								{step.number}. {step.title}
+							</h3>
+							<p className={styles.cardDescription}>{step.description}</p>
+						</Card>
+					))}
+				</div>
+			</div>
+		</section>
+	)
+}
