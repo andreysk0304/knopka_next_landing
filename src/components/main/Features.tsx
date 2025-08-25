@@ -2,32 +2,32 @@ import { Card, Tag } from 'antd'
 import { BarChartOutlined, MobileOutlined, RiseOutlined, DollarOutlined } from '@ant-design/icons'
 import styles from './styles/Features.module.css'
 
-export const Features: React.FC = () => {
-	const features = [
-		{
-			icon: <BarChartOutlined />,
-			title: 'Расшифровка отчетов',
-			description:
-				'Расшифровка отчетов за 2 клика. Не нужно сводить кучу таблиц, чтобы узнать чистую прибыль и налог.',
-		},
-		{
-			icon: <MobileOutlined />,
-			title: 'Данные в телефоне',
-			description: 'Не обязательно сидеть за компьютером, чтобы контролировать бизнес.',
-		},
-		{
-			icon: <RiseOutlined />,
-			title: 'Анализ рекламы',
-			description: 'За два клика покажем, какая кампания приносит деньги, а какая съедает.',
-		},
-		{
-			icon: <DollarOutlined />,
-			title: 'Самая доступная цена',
-			description: null,
-			pricing: true,
-		},
-	]
+const features = [
+	{
+		icon: <BarChartOutlined />,
+		title: 'Расшифровка отчетов',
+		description:
+			'Расшифровка отчетов за 2 клика. Не нужно сводить кучу таблиц, чтобы узнать чистую прибыль и налог.',
+	},
+	{
+		icon: <MobileOutlined />,
+		title: 'Данные в телефоне',
+		description: 'Не обязательно сидеть за компьютером, чтобы контролировать бизнес.',
+	},
+	{
+		icon: <RiseOutlined />,
+		title: 'Анализ рекламы',
+		description: 'За два клика покажем, какая кампания приносит деньги, а какая съедает.',
+	},
+	{
+		icon: <DollarOutlined />,
+		title: 'Самая доступная цена',
+		description: null,
+		pricing: true,
+	},
+]
 
+export const Features: React.FC = () => {
 	return (
 		<section className={styles.section}>
 			<div className={styles.container}>

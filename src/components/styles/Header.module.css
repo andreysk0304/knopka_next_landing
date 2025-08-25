@@ -1,0 +1,35 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #fff;
+}
+
+.logo {
+	flex-grow: 0;
+	display: flex;
+	align-items: center;
+}
+
+.logoImg:hover {
+	cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.ctaButton {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}

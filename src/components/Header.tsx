@@ -1,118 +1,46 @@
-'use client'
-
-import { useState } from 'react'
-import { Layout, Menu, Button, Drawer } from 'antd'
-import { BarChartOutlined, MenuOutlined } from '@ant-design/icons'
+import { FC } from 'react'
+import { Layout, Menu, Image } from 'antd'
 import type { MenuProps } from 'antd'
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+import styles from './styles/Header.module.css'
 
-const { Header: AntHeader } = Layout
+const menuItems: MenuProps['items'] = [
+	{
+		key: '/',
+		label: <Link href="/">Главная</Link>,
+	},
+	{
+		key: '/connection',
+		label: <Link href="/connection">Подключение</Link>,
+	},
+]
 
-const Header = () => {
-	const [drawerVisible, setDrawerVisible] = useState(false)
-
-	const menuItems: MenuProps['items'] = [
-		{
-			key: 'home',
-			label: 'Главная',
-		},
-		{
-			key: 'blog',
-			label: 'Блог',
-		},
-		{
-			key: 'pricing',
-			label: 'Тарифы',
-		},
-	]
+const Header: FC = () => {
+	const pathname = usePathname()
 
 	return (
-		<AntHeader
-			style={{
-				position: 'sticky',
-				top: 0,
-				zIndex: 1000,
-				display: 'flex',
-				alignItems: 'center',
-				justifyContent: 'space-between',
-				padding: '0 24px',
-			}}
-		>
-			{/* Logo */}
-			<div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-				<div
-					style={{
-						width: 32,
-						height: 32,
-						background: '#10B981',
-						borderRadius: 8,
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'center',
-					}}
-				>
-					<BarChartOutlined style={{ color: 'white', fontSize: 18 }} />
-				</div>
-				<span
-					style={{
-						fontSize: 20,
-						fontWeight: 700,
-						color: '#1f2937',
-					}}
-				>
-					MarketPro
-				</span>
-			</div>
-
-			{/* Desktop Menu */}
-			<div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-				<div className="hidden md:block">
-					<Menu
-						mode="horizontal"
-						items={menuItems}
-						style={{
-							border: 'none',
-							background: 'transparent',
-							minWidth: '300px',
-						}}
-					/>
-				</div>
-
-				<Button
-					type="primary"
-					size="large"
-					style={{
-						borderRadius: 8,
-						fontWeight: 500,
-					}}
-				>
-					Попробовать бесплатно
-				</Button>
-
-				{/* Mobile Menu Button */}
-				<Button
-					className="md:hidden"
-					type="text"
-					icon={<MenuOutlined />}
-					onClick={() => setDrawerVisible(true)}
+		<Layout.Header className={styles.header}>
+			<div className={styles.logo}>
+				<Image
+					src="/logoBlack.svg"
+					alt="logo"
+					title="Кнопка Заказы"
+					unselectable="on"
+					preview={false}
+					fetchPriority="high"
+					height={40}
+					style={{ verticalAlign: 'initial' }}
+					className={styles.logoImg}
 				/>
 			</div>
-
-			{/* Mobile Drawer */}
-			<Drawer
-				title="Меню"
-				placement="right"
-				onClose={() => setDrawerVisible(false)}
-				open={drawerVisible}
-				width={280}
-			>
-				<Menu mode="vertical" items={menuItems} style={{ border: 'none' }} />
-				<div style={{ marginTop: 24 }}>
-					<Button type="primary" block size="large" style={{ borderRadius: 8 }}>
-						Попробовать бесплатно
-					</Button>
-				</div>
-			</Drawer>
-		</AntHeader>
+			<Menu
+				mode="horizontal"
+				items={menuItems}
+				className={styles.menu}
+				selectedKeys={[pathname]}
+			/>
+		</Layout.Header>
 	)
 }
 
