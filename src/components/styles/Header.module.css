@@ -23,13 +23,3 @@
   justify-content: flex-end;
 }
 
-.ctaButton {
-  border-radius: 8px;
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-}

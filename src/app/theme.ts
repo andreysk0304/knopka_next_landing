@@ -2,14 +2,16 @@ import { Inter } from "next/font/google"
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
+export const COLORS = {
+	primary: '#3ec15cff',
+	primaryActive: '#2e9546',
+	primaryHover: '#6dcf84',
+}
+
 export const THEME = {
 	token: {
-		colorPrimary: '#10B981',
-		colorSuccess: '#10B981',
-		colorInfo: '#3B82F6',
-		colorWarning: '#F59E0B',
-		colorError: '#EF4444',
-		borderRadius: 8,
+		colorPrimary: COLORS.primary,
+		colorSuccess:  COLORS.primary,
 		fontFamily: inter.style.fontFamily,
 	},
 	components: {
