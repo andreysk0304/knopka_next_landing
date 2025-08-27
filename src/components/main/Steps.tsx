@@ -6,20 +6,20 @@ const STEPS = [
 		number: '1',
 		title: 'Активируйте Бота',
 		description: 'Нажмите на кнопку "Попробовать"',
-		image: 'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2',
+		image: '/1.jpg',
 	},
 	{
 		number: '2',
 		title: 'Добавьте Кабинет',
 		description:
 			'Введите название своего кабинета и действуйте по инструкции дальше в чат боте',
-		image: 'https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2',
+		image: '/2.jpg',
 	},
 	{
 		number: '3',
 		title: 'Получайте удовольствие от автоматизации',
 		description: 'Наслаждайтесь результатами автоматизации вашего бизнеса',
-		image: 'https://images.pexels.com/photos/1181216/pexels-photo-1181216.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&dpr=2',
+		image: '/3.jpg',
 	},
 ]
 

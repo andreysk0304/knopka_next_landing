@@ -6,7 +6,7 @@
     gap: 18px;
     border: solid 1px #e2e2e2;
     border-radius: 16px;
-    padding: 24px 24px 40px;
+    padding: 24px 36px 40px 24px;
     background-color: #fff;
 }
 
@@ -27,6 +27,7 @@
 }
 
 .content {
+    flex-grow: 1;
     margin-top: 4px;
     display: flex;
     flex-direction: column;

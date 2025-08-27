@@ -14,6 +14,10 @@ const menuItems: MenuProps['items'] = [
 		key: '/connection',
 		label: <Link href="/connection">Подключение</Link>,
 	},
+	{
+		key: '/blog',
+		label: <Link target='_blank' href="https://blog.knopkazakazy.ru/">Блог</Link>,
+	},
 ]
 
 const Header: FC = () => {
