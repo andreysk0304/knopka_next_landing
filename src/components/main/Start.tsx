@@ -13,8 +13,8 @@ export const Start: React.FC = () => {
 
 			<div className={styles.container}>
 				<h1 className={styles.title}>
-					Оцифруйте финансы Wildberries и <br />
-					анализируйте прибыль за 2 клика!
+					Оцифруйте финансы и рекламу на Wildberries<br />
+					за пару кликов!
 				</h1>
 
 				<p className={styles.subtitle}>

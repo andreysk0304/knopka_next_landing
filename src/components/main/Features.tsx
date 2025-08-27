@@ -46,9 +46,9 @@ export const Features: React.FC = () => {
 									<div className={styles.pricingTitle}>ТАРИФЫ</div>
 									<Tag color="green">3 дня — бесплатно</Tag>
 									<div className={styles.pricingWrapper}>
-										<div>1 месяц — 999₽</div>
-										<div>2 месяца — 1799₽</div>
-										<div>3 месяца — 2449₽</div>
+										<div>1 месяц — 1499₽</div>
+										<div>2 месяца — 2899₽</div>
+										<div>3 месяца — 4299₽</div>
 									</div>
 								</div>
 							) : (
