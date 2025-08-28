@@ -29,7 +29,7 @@ export default function Connection() {
 						</Link>
 						, чтобы создать API ключ
 					</Paragraph>
-					<Flex justify='center'>
+					<Flex justify="center">
 						<div className={styles.img}>
 							<Image
 								src="/profile.png"
@@ -52,11 +52,13 @@ export default function Connection() {
 				</Step>
 				<Step stepNumber={2}>
 					<Title level={3}>Перейдите в настройки</Title>
-					<Paragraph>Наведите на свое ИП и нажмите "Интеграции по API"</Paragraph>
-					<Flex justify='center'>
+					<Paragraph>
+						Наведите курсор на свою организацию и нажмите "Интеграции по API"
+					</Paragraph>
+					<Flex justify="center">
 						<div className={styles.img}>
 							<Image
-								src="/integration.jpg"
+								src="/integration.png"
 								alt="Интеграция по API"
 								title="Интеграции по API"
 								unselectable="on"
@@ -66,8 +68,11 @@ export default function Connection() {
 				</Step>
 				<Step stepNumber={3}>
 					<Title level={3}>Создайте новый API ключ</Title>
-					<Paragraph>При создании нового API ключа выберите "Продвижение" и "Аналитика". Поставьте галочки</Paragraph>
-					<Flex justify='center'>
+					<Paragraph>
+						При создании нового API ключа выберите <b>"Продвижение"</b>,
+						<b>"Статистика"</b> и <b>"Аналитика"</b>
+					</Paragraph>
+					<Flex justify="center">
 						<div className={styles.img} style={{ maxHeight: 500 }}>
 							<Image
 								src="/key.jpg"
