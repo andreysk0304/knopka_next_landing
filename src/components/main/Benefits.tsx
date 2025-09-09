@@ -3,7 +3,7 @@ import { CloseOutlined, CheckOutlined } from '@ant-design/icons'
 import styles from './styles/Benefits.module.css'
 
 const problems = [
-	'Финансовые отчеты в Wildberries — это хаос',
+	'Финансовые отчеты в Wildberries — это сложно',
 	'«Каждый час ручного расчета = потеря прибыли и времени»',
 	'«Ошибки в отчетах? Это дороже, чем вы думаете»',
 	'«Рекламные бюджеты утекают, а вы даже не видите, куда»',
