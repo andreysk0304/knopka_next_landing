@@ -1,19 +1,16 @@
 import { Button } from 'antd'
+import { openTg } from '@/utils'
 import styles from './styles/Start.module.css'
 
 export const Start: React.FC = () => {
-	const scrollToContact = () => {
-		const contactSection = document.getElementById('contact')
-		contactSection?.scrollIntoView({ behavior: 'smooth' })
-	}
-
 	return (
 		<section className={styles.section}>
 			<div className={styles.bgPattern} />
 
 			<div className={styles.container}>
 				<h1 className={styles.title}>
-					Оцифруйте финансы и рекламу на Wildberries<br />
+					Оцифруйте финансы и рекламу на Wildberries
+					<br />
 					за пару кликов!
 				</h1>
 
@@ -21,7 +18,7 @@ export const Start: React.FC = () => {
 					Автоматизируйте финансы, налоги и рекламу — сосредоточьтесь на росте бизнеса.
 				</p>
 
-				<Button type="primary" className={styles.button} onClick={scrollToContact}>
+				<Button type="primary" className={styles.button} onClick={openTg}>
 					Попробовать бесплатно
 				</Button>
 			</div>

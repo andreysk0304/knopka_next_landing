@@ -4,7 +4,7 @@ import styles from './styles/Contacts.module.css'
 
 export const Contacts: React.FC = () => {
 	const handleTelegramClick = () => {
-		window.open('https://t.me/zakazywork_bot?start=c2FpdA', '_blank')
+		window.open('https://t.me/knopkasupport', '_blank')
 	}
 
 	return (
